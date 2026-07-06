@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela da Copa do Mundo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 800px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 12px 15px;
+            text-align: center;
+        }
+
+        thead {
+            background-color: #4A148C; /* Roxo escuro */
+            color: #ffffff;
+        }
+
+        th {
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+
+        tbody tr {
+            border-bottom: 1px solid #dddddd;
+        }
+
+        tbody tr:nth-of-type(even) {
+            background-color: #f3f3f3;
+        }
+
+        tbody tr:last-of-type {
+            border-bottom: 2px solid #4A148C;
+        }
+
+        .pos {
+            font-weight: bold;
+            width: 40px;
+        }
+
+        .classificado {
+            border-left: 5px solid #2e7d32; /* Verde para os classificados */
+        }
+
+        .time {
+            text-align: left;
+            font-weight: bold;
+        }
+
+        .pts {
+            background-color: #eaeaf4;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Pos</th>
+                <th class="time">Seleção</th>
+                <th>P</th>
+                <th>J</th>
+                <th>V</th>
+                <th>E</th>
+                <th>D</th>
+                <th>GP</th>
+                <th>GC</th>
+                <th>SG</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="classificado">
+                <td class="pos">1</td>
+                <td class="time">🇧🇷 Brasil</td>
+                <td class="pts">9</td>
+                <td>3</td>
+                <td>3</td>
+                <td>0</td>
+                <td>0</td>
+                <td>7</td>
+                <td>1</td>
+                <td>6</td>
+            </tr>
+            <tr class="classificado">
+                <td class="pos">2</td>
+                <td class="time">🇨🇭 Suíça</td>
+                <td class="pts">6</td>
+                <td>3</td>
+                <td>2</td>
+                <td>0</td>
+                <td>1</td>
+                <td>4</td>
+                <td>3</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td class="pos">3</td>
+                <td class="time">🇨🇲 Camarões</td>
+                <td class="pts">4</td>
+                <td>3</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>4</td>
+                <td>4</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td class="pos">4</td>
+                <td class="time">🇷🇸 Sérvia</td>
+                <td class="pts">1</td>
+                <td>3</td>
+                <td>0</td>
+                <td>1</td>
+                <td>2</td>
+                <td>5</td>
+                <td>8</td>
+                <td>-3</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
